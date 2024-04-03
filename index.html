@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dementia Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeInUp">
+        <h1 >Dementia Detection</h1>
+        <form id="dementiaForm" class="animate__animated animate__fadeInUp">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mr_delay">MR Delay:</label>
+                    <input type="text" id="mr_delay" name="mr_delay">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="educ">EDUC:</label>
+                    <input type="text" id="educ" name="educ">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ses">SES:</label>
+                    <input type="text" id="ses" name="ses">
+                </div>
+                <div class="form-group">
+                    <label for="cdr">CDR:</label>
+                    <input type="text" id="cdr" name="cdr">
+                </div>
+                <div class="form-group">
+                    <label for="etiv">eTIV:</label>
+                    <input type="text" id="etiv" name="etiv">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ewbv">eWBV:</label>
+                    <input type="text" id="ewbv" name="ewbv">
+                </div>
+                <div class="form-group">
+                    <label for="asf">ASF:</label>
+                    <input type="text" id="asf" name="asf">
+                </div>
+                <div class="form-group">
+                    <label for="mmse">MMSE:</label>
+                    <input type="text" id="mmse" name="mmse">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" onclick="detectDementia()" class="btn">Detect Dementia</button>
+        </form>
+        <p id="result" class="animate__animated animate__fadeInUp animate__infinite"></p>
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
